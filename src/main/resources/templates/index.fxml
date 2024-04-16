@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tareas.controller.IndexController">
+   <children>
+      <Label contentDisplay="TOP" layoutX="222.0" layoutY="48.0" prefHeight="31.0" prefWidth="183.0" text="Sistema de Tareas" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
+         <font>
+            <Font name="System Italic" size="21.0" />
+         </font></Label>
+      <TableView fx:id="tareaTabla" layoutX="200.0" layoutY="100.0" prefHeight="200.0" prefWidth="343.0">
+        <columns>
+          <TableColumn fx:id="idTarea" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="nombreTarea" prefWidth="75.0" text="TAREA" />
+            <TableColumn fx:id="responsable" prefWidth="107.20001220703125" text="RESPONSABLE" />
+            <TableColumn fx:id="estatus" prefWidth="87.0" text="ESTADO" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
